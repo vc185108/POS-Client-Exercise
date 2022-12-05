@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ViewNavigationRules touchPointType="POS"
+                     display="MainDisplay">
+  <StateToViews> 
+    <State name="WfmLoyaltyCustomerSearch">
+      <ToView viewName="Retalix.Wholefoods.Client.POS.Presentation.Views.Views.WfmLoyaltyCustomerSearchView"
+         viewAssemblyName="Retalix.Wholefoods.Client.POS.Presentation.Views"
+         name="Retalix.Wholefoods.Client.POS.Presentation.ViewModels.ViewModels.WfmLoyaltyCustomerSearchViewModel"
+         assemblyName="Retalix.Wholefoods.Client.POS.Presentation.ViewModels" >
+      </ToView>
+    </State>
+    <State name="WfmLoyaltyCustomerLookup">
+      <ToView viewName="Retalix.Wholefoods.Client.POS.Presentation.Views.Views.WfmLoyaltyCustomerView"
+         viewAssemblyName="Retalix.Wholefoods.Client.POS.Presentation.Views"
+         name="Retalix.Wholefoods.Client.POS.Presentation.ViewModels.ViewModels.WfmLoyaltyCustomerViewModel"
+         assemblyName="Retalix.Wholefoods.Client.POS.Presentation.ViewModels" />
+    </State>
+  </StateToViews>
+</ViewNavigationRules>

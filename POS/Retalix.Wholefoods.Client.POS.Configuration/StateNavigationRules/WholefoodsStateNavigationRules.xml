@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ExtensionNavigationRules touchPointType="POS"> 
+  <NavigationRule>
+    <FromState>NoSaleMode</FromState>
+    <NavigationCase>
+      <FromOutcome>WfmLoyaltyCustomerSearchOutcome</FromOutcome>
+      <ToState>WfmLoyaltyCustomerSearch</ToState>
+    </NavigationCase>
+  </NavigationRule>
+
+  <NavigationRule>
+    <FromState>WfmLoyaltyCustomerSearch</FromState>
+    <NavigationCase>
+      <FromOutcome>WfmLoyaltyCustomerLookupOutcome</FromOutcome>
+      <ToState>WfmLoyaltyCustomerLookup</ToState>
+    </NavigationCase>
+  </NavigationRule>
+
+  <NavigationRule>
+    <FromState>WfmLoyaltyCustomerSearch</FromState>
+    <NavigationCase>
+      <FromOutcome>WfmLoyaltyCustomerBackOutcome</FromOutcome>
+      <ToState>NoSaleMode</ToState>
+    </NavigationCase>
+  </NavigationRule>
+
+
+  <NavigationRule>
+    <FromState>WfmLoyaltyCustomerLookup</FromState>
+    <NavigationCase>
+      <FromOutcome>WfmLoyaltyCustomerBackOutcome</FromOutcome>
+      <ToState>WfmLoyaltyCustomerSearch</ToState>
+    </NavigationCase>
+  </NavigationRule>
+ 
+</ExtensionNavigationRules>
