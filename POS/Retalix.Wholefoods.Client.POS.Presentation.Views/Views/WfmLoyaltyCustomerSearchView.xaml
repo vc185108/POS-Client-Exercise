@@ -7,7 +7,7 @@
              xmlns:localization="clr-namespace:Retalix.Client.Presentation.Core.Localization;assembly=Retalix.Client.Presentation.Core"
              mc:Ignorable="d" 
              d:DesignHeight="450" Width="473.697">
-    <Grid >
+    <Grid Background="White" >
         <TextBlock HorizontalAlignment="Center"
                    VerticalAlignment="Top"
                    FontSize="22"
@@ -15,7 +15,7 @@
                    Margin="75,141,9.6,0" FontWeight="Bold" Height="31" Width="389">
             <TextBlock.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF00FF52" Offset="0"/>
+                    <GradientStop Color="#FF111824" Offset="0"/>
                 </LinearGradientBrush>
             </TextBlock.Foreground>Please Enter Customer Name</TextBlock>
         <TextBox
@@ -26,7 +26,6 @@
                  Padding="10,0"
                  Style="{DynamicResource SearchTextBoxStyle}"
                  FontSize="{DynamicResource SystemFontSizeXL}"
-                 Background="#FFCAD0D1"
                  Text="{Binding Customer, UpdateSourceTrigger=PropertyChanged}" Height="44" />
         <Button
             Grid.Row="3"

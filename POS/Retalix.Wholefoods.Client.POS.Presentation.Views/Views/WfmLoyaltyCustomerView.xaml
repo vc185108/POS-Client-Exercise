@@ -7,15 +7,20 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <ListView  x:Name="UserGrid"   ItemsSource="{Binding wfmLCElement}"   Foreground="DarkGreen" FontSize="20" FontWeight="Bold" Height="200" Margin="0,0,0.4,0" VerticalAlignment="Top">
+        <ListView  Background="White" x:Name="UserGrid"   ItemsSource="{Binding wfmLCElement}"   Foreground="DarkGreen" FontSize="20" FontWeight="Bold" Height="393" Margin="10,10,10,0" VerticalAlignment="Top">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="Height" Value="50" />
                 </Style>
             </ListView.ItemContainerStyle>
+            <ListView.Resources>
+                <Style TargetType="{x:Type GridViewColumnHeader}">
+                    <Setter Property="HorizontalContentAlignment" Value="Left" />
+                </Style>
+            </ListView.Resources>
             <ListView.View>
 
-                <GridView >
+                <GridView>
                     <GridViewColumn Header="Store" DisplayMemberBinding="{Binding Store}" Width="150" />
                     <GridViewColumn Header="Customer" DisplayMemberBinding="{Binding Customer}"  Width="150"/>
                     <GridViewColumn Header="Mobile" DisplayMemberBinding="{Binding Mobile}"  Width="150"/>
